@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 
 export function PagesStack() {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Mapa" component={Map} />
             <Stack.Screen name="Tutorial" component={Tutorial} />
