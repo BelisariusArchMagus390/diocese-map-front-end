@@ -6,7 +6,16 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "prepare": "husky install",
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+      "*.js": [
+          "npm run lint:fix"
+      ]
   },
   "dependencies": {
     "@expo-google-fonts/montserrat": "^0.2.3",
@@ -26,7 +35,9 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-n": "^16.2.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.33.2"
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2"
   },
   "private": true
 }
