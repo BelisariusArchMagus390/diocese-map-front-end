@@ -1,12 +1,11 @@
-import {ImageBackground, Image, View, Text} from 'react-native'
+import { ImageBackground, View, Text } from 'react-native'
 import genericStyles from '../styles/GenericStyle'
-import homeStyles from '../styles/HomeStyle'
 
-export default function MainPanel() {
+export default function MainPanel () {
   return (
     <View style={genericStyles.container}>
-      <ImageBackground 
-        source={require("../assets/images/diocese_icon.png")}
+      <ImageBackground
+        source={require('../assets/images/diocese_icon.png')}
         resizeMode="cover" style={genericStyles.image}>
 
         <View style={genericStyles.panel}>
@@ -15,5 +14,5 @@ export default function MainPanel() {
 
       </ImageBackground>
     </View>
-  );
+  )
 };
