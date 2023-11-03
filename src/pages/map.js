@@ -1,9 +1,12 @@
-import { View, Text } from 'react-native'
+import { Text, View } from 'react-native'
+import DefaultLayout from '../layouts/default'
 
 export default function Map () {
   return (
-        <View>
-            <Text>Map</Text>
-        </View>
+    <DefaultLayout>
+      <View>
+        <Text>Conteúdo do painel</Text>
+      </View>
+    </DefaultLayout>
   )
 }
