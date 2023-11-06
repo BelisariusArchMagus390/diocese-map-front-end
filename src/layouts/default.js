@@ -20,8 +20,15 @@ const styles = StyleSheet.create({
     position: 'relative'
   },
   image: {
-    flex: 1,
-    opacity: 0.2
+    //flex: 1,
+    opacity: 0.2,
+    width: 227.85,
+    height: 262.64,
+    flexShrink: 0,
+    marginBottom: 302.36,
+    marginTop: 75,
+    marginRight: 71,
+    marginLeft: 93,
   },
   children: {
     position: 'absolute',
