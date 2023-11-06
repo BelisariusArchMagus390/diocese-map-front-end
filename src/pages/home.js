@@ -30,7 +30,7 @@ export default function MainPanel ({ navigation: { navigate } }) {
     </DefaultLayout>
   )
 };
-
+//LOL
 const styles = StyleSheet.create({
   container: {
     flex: 1,
